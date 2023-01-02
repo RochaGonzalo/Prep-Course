@@ -32,11 +32,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   switch(status){
-    case 1 : "Online"
+    case 1 : return "Online"
     break;
-    case 2 : "Away"
+    case 2 : return "Away"
     break;
-    default : "Offline"
+    default : return "Offline"
   }
 }
 
@@ -48,15 +48,15 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   switch(idioma){
-    case "aleman" : "Guten Tag!"
+    case "aleman" : return "Guten Tag!"
     break;
-    case "mandarin" : "Ni Hao!"
+    case "mandarin" : return "Ni Hao!"
     break;
-    case "ingles" : "Hello"
+    case "ingles" : return "Hello"
     break;
-    case "undefined" : "Hola!"
+    case "undefined" : return "Hola!"
     break;
-    default : "Hola!"
+    default : return "Hola!"
   }
 }
 
@@ -69,15 +69,15 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case "blue" : "This is blue"
+    case "blue" : return "This is blue"
     break;
-    case "red" : "This is red"
+    case "red" : return "This is red"
     break;
-    case "green" : "This is green"
+    case "green" : return "This is green"
     break;
-    case "orange" : "This is orange"
+    case "orange" : return "This is orange"
     break;
-    default : "Color not found"
+    default : return "Color not found"
   }
 }
 
@@ -201,19 +201,33 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  let tablaDelSeis = [0,6,12,18,24,30,36,42,48,54,60];
+  return tablaDelSeis
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  for ( let i = 0 ; i <= numero ; i++){
+    if (numero > 99 ){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let Numero = numero;
+  let i = 0;
+  do{
+    Numero += 5 ;
+    i = i + 1;
+  } while( i = 5)
 }
 
 
