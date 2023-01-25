@@ -1,0 +1,17 @@
+h1{
+    color: lightblue;
+}
+
+img{
+    width: 400px;
+}
+
+#thirdID{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(67, 25, 107);
+    font-size: 18px;
+    margin: 50px;
+    border: 1px red solid;
+    padding: 50px;
+}
